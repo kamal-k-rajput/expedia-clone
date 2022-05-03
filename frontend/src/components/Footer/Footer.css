@@ -1,0 +1,35 @@
+.ft-link-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.ft-links {
+  margin: 0 10px;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.ft-headings {
+  margin: 0;
+}
+.ft-links > div {
+  padding: 5px;
+  cursor: pointer;
+}
+.ft-last {
+  margin: 0 auto;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .ft-link-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
