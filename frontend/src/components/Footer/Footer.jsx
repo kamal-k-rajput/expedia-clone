@@ -48,7 +48,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div>
+      <div >
         <img
           alt=""
           src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"
