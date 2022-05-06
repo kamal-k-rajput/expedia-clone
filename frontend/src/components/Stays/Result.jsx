@@ -4,7 +4,6 @@ import { Card } from "./Card";
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 const axios = require("axios").default;
-
 export const Result = () => {
   const [data, setdata] = useState([]);
   useEffect(() => {
@@ -26,9 +25,14 @@ export const Result = () => {
 
   return (
     <>
-      {data.map((el) => {
-        return <Card data={el} key={nanoid()} />;
-      })}
+      <div className="main-container">
+        <div style={{ backgroundColor: "red" }}></div>
+        <div>
+          {data.map((el) => {
+            return <Card data={el} key={nanoid()} />;
+          })}
+        </div>
+      </div>
     </>
   );
 };
