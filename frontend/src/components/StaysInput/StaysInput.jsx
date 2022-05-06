@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import "./StaysInput.css";
 
 import user from "../../assets/icons/user.jpg";
+import { Link } from "react-router-dom";
 export const StaysInput = () => {
   return (
     <div className="stays-input-container">
@@ -63,7 +64,7 @@ export const StaysInput = () => {
       </div>
       <div className="button">
         <Button variant="primary" size="lg">
-          Search
+          <Link to="/searchResult" style={{textDecoration:"none", color:"white"}}>Search</Link>
         </Button>{" "}
       </div>
     </div>

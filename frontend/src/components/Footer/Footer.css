@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid grey;
 }
 .ft-links {
   margin: 0 10px;
@@ -19,10 +21,17 @@
 .ft-links > div {
   padding: 5px;
   cursor: pointer;
+  font-size: 12px;
+  color: blue;
+}
+.ft-links > div:hover {
+  text-decoration: underline;
 }
 .ft-last {
   margin: 0 auto;
   width: 80%;
+  padding: 0 0 40px 0;
+  font-size: 14px;
 }
 @media (max-width: 480px) {
   .ft-links {

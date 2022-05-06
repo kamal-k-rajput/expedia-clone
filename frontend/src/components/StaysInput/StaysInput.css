@@ -31,9 +31,7 @@
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  /* padding: 0 20%; */
   height: 70px;
-  /* border: 2px solid red; */
 }
 .traveller-container {
   border: 1px solid rgb(0, 0, 0);
@@ -68,6 +66,7 @@
 .input-additional {
   display: flex;
   justify-content: flex-start;
+  /* align-items: center; */
   width: 80%;
   margin: 10px auto;
 }
@@ -77,6 +76,7 @@
 .stays-input-container {
   display: flex;
   flex-direction: column;
+  object-fit: contain;
 }
 .qr-code-img {
   width: 300px;
