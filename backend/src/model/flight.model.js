@@ -8,7 +8,8 @@ const flightSchema = new mongoose.Schema(
         pname: { type: String, required: false },
         safe: { type: String, required: false },
         price: { type: Number, required: false },
-time: {type:String, required:false}
+time: {type:String, required:false},
+logo: {type:String, required:false}
     },
     {
         versionKey:false,
