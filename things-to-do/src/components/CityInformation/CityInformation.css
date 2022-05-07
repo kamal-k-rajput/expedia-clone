@@ -2,4 +2,5 @@
     display: grid;
     grid:auto auto auto auto auto / auto auto;
     grid-gap: 15px;
+    margin-top: 15px;
 }

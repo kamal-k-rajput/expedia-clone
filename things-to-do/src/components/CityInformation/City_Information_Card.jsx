@@ -7,6 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard({id,img,name,des,rating,refund,rs}) {
+export default function MediaCard({id,img,name,time,rating,rnumber,price,cancel,ptravel,lprice}) {
   const classes = useStyles();
 
   return (
@@ -25,25 +27,36 @@ export default function MediaCard({id,img,name,des,rating,refund,rs}) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={img}
+          image={img}    
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="p">
             {name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {des}
+          
+          <Typography gutterBottom variant="h6" component="h1">
+          <AccessTimeIcon/> {time}
           </Typography>
           <Typography gutterBottom variant="h6" component="h2">
             {rating}
           </Typography>
+          {/* <Typography variant="body2" color="textSecondary" component="p">
+            {rnumber}
+          </Typography> */}
           <Typography variant="body2" color="textSecondary" component="p">
-            {refund}
+            {cancel}
           </Typography>
-          <Typography gutterBottom variant="h6" component="h2">
-            {rs} Rs
+          <Typography gutterBottom variant="h5" component="h2">
+            S${price}
           </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {ptravel}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {lprice}
+          </Typography>
+         
  
         
         </CardContent>

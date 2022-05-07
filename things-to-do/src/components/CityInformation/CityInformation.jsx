@@ -13,24 +13,28 @@ export const CityInformation=()=>{
     },[])
 
     const getData=()=>{
-        axios.get(`http://188.166.98.109:5000/hotel`).then(res=>{
+        axios.get(`http://188.166.98.109:5000/things`).then(res=>{
             setData(res.data)
             console.log(data)
         })
     }
     return(
         <div>
-            <h1>jhkjkj</h1>
+            
             <div className="cities_card">{data.map((item,index)=>{
                 return(
                     <MediaCard
                         id={item._id}
-                        img={item.img}
-                        name={item.name}
-                        des={item.des}
+                        img={item.etc1}
+                       name={item.name}
+                        time={item.time}
                         rating={item.rating}
-                        refund={item.refund}
-                        rs={item.rs}
+                        rnumber={item.rnumber}
+                        price={item.price}
+                        cancel={item.cancel}
+                        ptravel={item.ptravel}
+                        lprice={item.lprice}
+                        
                     />
                 )
             })}</div>
