@@ -1,0 +1,109 @@
+.maindiv{
+    display: flex;
+    margin-left:150px
+}
+
+.firstdiv{
+    display:flex;
+    
+}
+.seconddiv{
+    display:flex;
+    margin-left: 380px;
+}
+.firstdiv>div{
+    margin-left: 40px;
+    cursor: pointer;
+    border:1px solid red;
+    height:30px;
+    width:80px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border:transparent;
+    
+    
+}
+.firstdiv>div:hover{
+  background-color: rgb(231,237,253);
+  
+    
+}
+.seconddiv>div{
+    display:flex;
+    margin-left: 40px;
+    color:blue;
+    cursor: pointer;
+}
+input{
+    /* margin-top: 30px; */
+    height:40px;
+    font-size: 18px;
+    
+    
+}
+ .migrate{
+    /* margin-top: 30px; */
+    width:290px;
+    margin-left: 20px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    
+
+    
+ }
+ .date{
+    margin-top: 30px;
+    width:180px;
+    margin-left: 20px;
+    cursor: pointer;
+ }
+ .inputdiv{
+     margin-left:160px;
+ }
+
+ .navflightbtn{
+     color:white;
+     background-color: rgb(54,98,216);
+     height:40px;
+     width:150px;
+     font-weight: bolder;
+     font-size: medium;
+     border-radius: 8px;
+     border:none;
+     margin-top: 20px;
+     margin-left: 42%;
+     cursor: pointer;
+     
+}
+ .migrate-container{
+     outline:none;
+     border:1px solid black;
+     display:inline-block;
+     height:40px;
+     /* margin-left: 20px; */
+     cursor: pointer;
+
+     }
+
+ .migrate-container:active{
+     border:none;
+     outline:none;
+ }
+ .migrate:focus{
+    border:none;
+    outline:none;
+}
+label{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.swapbtn{
+    border-radius: 50%;
+    font-size: larger;
+    cursor:pointer;
+}
+
+
+ 

@@ -1,0 +1,22 @@
+.dropdown-content{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 10px;
+    width:190px;
+    border-radius: 10px;
+    height:180px;
+    position:absolute;
+    background-color: white;
+    z-index: 1;
+}
+.dropdown-item{
+    padding-left: 30px;
+    padding-top: 20px;
+    cursor:pointer;
+    transition: all 0.2s;
+    color:black;
+    
+}
+.dropdown-item:hover{
+    background-color: rgb(231,237,253);
+    
+}

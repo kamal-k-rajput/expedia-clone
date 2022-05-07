@@ -1,0 +1,245 @@
+.navbar{
+    display:flex;
+    padding-left:60px;
+    
+    
+}
+
+.navbar>div{
+    padding-left: 35px;
+    cursor: pointer;
+    color:blue;
+}
+.popupdiv{
+    margin-left: 0%;
+}
+.migrate2{
+    /* margin-top: 30px; */
+    width:180px;
+    margin-left: 20px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: smaller;
+    margin-top: 0%;
+    
+
+    
+ }
+ .date2{
+    margin-top: 30px;
+    width:150px;
+    margin-left: 20px;
+    cursor: pointer;
+ }
+ .inputdiv2{
+     margin-left:100px;
+ }
+
+
+ .migrate-container2{
+     outline:none;
+     border:1px solid black;
+     display:inline-block;
+     height:40px;
+     /* margin-left: 20px; */
+     cursor: pointer;
+
+     }
+
+ .migrate-container2:active{
+     border:none;
+     outline:none;
+ }
+ .migrate2:focus{
+    border:none;
+    outline:none;
+}
+label{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.swapbtn2{
+    border:none;
+    font-size: larger;
+    cursor:pointer;
+    color:blue;
+    background-color: white;
+}
+.spantag{
+    font-size: x-small;
+    padding-bottom: 50px;
+}
+.maindisplaybox1{
+   
+    background-color: rgb(248,245,244);
+}
+.maindisplaybox2{
+    display:flex;
+    margin-left: 100px;
+    margin-top: 60px;
+    background-color: rgb(248,245,244);
+}
+.filerdisplay{
+ border:1px solid red;
+ width:350px;
+ height:100%;
+}
+.flightdisplay{
+ border:1px solid green;
+ width:650px;
+ height:100%;
+ margin-left: 10px;
+
+}
+.ad-display{
+border:1px solid salmon;
+width:200px;
+height:700px;
+margin-left: 38px;
+}
+.infoflight{
+    font-size: 13px;
+}
+.text-select{
+    display:flex;
+}
+.select{
+    height:50px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    border:2px solid blue;
+    cursor: pointer;
+}
+.card{
+    width:100%;
+    height:100px;
+    background-color: rgb(255,255,255);
+    margin-top: 25px;
+    border-radius: 15px;
+    display:flex;
+}
+
+/* .firstdiv{
+    height:100px;
+    width:150px;
+    border:1px solid orangered
+}
+.timepricediv{
+    display:flex;
+}
+.timediv{
+
+padding-left: 13px;
+padding-top: 13px;
+font-size: small;
+}
+.durationdiv{
+padding-top: 13px;
+font-size: small;
+padding-left: 190px;
+}
+.pricediv{
+font-weight: bold;
+padding-top: 13px;
+padding-left: 140px;
+font-size: 25px;
+}
+.destination{
+    font-size: 14px;
+    padding-left: 13px;
+    padding-top: 0%;
+    margin:0%
+}
+.logoflightname{
+    display:flex;
+    padding-left: 13px;
+}
+.logo{
+font-size: 14px;
+height: 15px;
+
+}
+.flightname{
+font-size: 14px;
+padding-left: 5px;
+}
+.safety{
+    font-size: 13px;
+    padding-left: 13px;
+} */
+.card{
+    cursor:pointer
+}
+.resultsearchbtn{
+    margin-left: 30px;
+    height:40px;
+    width:100px;
+    color:white;
+    background-color: rgb(54,98,216);
+    border-radius: 8px;
+    border:transparent;
+}
+.stopsfrom{
+    display:flex;
+    justify-content: space-between;
+}
+.route{
+    display:flex;
+}
+.noofflight{
+    padding-left: 4px;
+    padding-top: 12px;
+}
+.filterpricediv{
+    padding-top: 12px;
+}
+.morningbox{
+    display:flex;
+}
+.morning{
+    border:1px solid silver;
+    width:150px;
+    height:150px;
+    border-radius: 10px;
+    }
+
+    .dayicon{
+        padding-left: 70px;
+    }
+    .day{
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    .time{
+        font-size: 15px;
+        padding-left:40px;
+    }
+    .afternoonbox{
+        display:flex;
+        padding-top: 10px;
+    }
+    .secdiv{
+padding-left: 50%;
+    }
+
+    .firstdiv{
+        height:100px;
+        
+        border:1px solid orangered;
+    }
+
+    .secdiv{
+        height:100px;
+        
+        border:1px solid green;
+        
+
+    }
+    .thirddiv{
+        height:100px;
+        
+        border:1px solid palevioletred;
+        
+    }
