@@ -88,7 +88,7 @@ export const Card = ({ data }) => {
                 {data.rs}
               </div>
               <h5>Rs{data.rs1}</h5>
-              <div>Rs{data.srs} Total</div>
+              <div>Rs{data.rs1} Total</div>
             </div>
           </div>
         </div>

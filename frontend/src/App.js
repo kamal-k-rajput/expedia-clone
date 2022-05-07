@@ -10,6 +10,7 @@ function App() {
       <NavbarComponent></NavbarComponent>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/stays" element={<Home />}></Route>
         <Route path="/searchResult" element={<Result />}></Route>
         {/* <Route path="/flight" element={<Result />}></Route> */}
