@@ -82,7 +82,7 @@ export const Card = ({ data }) => {
               </div>
             </div>
             <div className="right-details-container">
-              <div className="tag">{ data.tag}</div>
+              <div className="tag">{data.tag}</div>
               <div className="line-through">
                 {"Rs "}
                 {data.rs}

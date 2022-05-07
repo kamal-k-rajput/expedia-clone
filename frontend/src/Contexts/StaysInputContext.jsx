@@ -1,7 +1,5 @@
 import { createContext, useState } from "react";
-
 const StaysInputContext = createContext();
-
 const StaysInputContextProvider = ({ children }) => {
   const [inputData, setinputData] = useState({
     location: "",
@@ -14,7 +12,6 @@ const StaysInputContextProvider = ({ children }) => {
     setinputData({ ...inputData, [name]: value });
     console.log(inputData);
   };
-
   return (
     <StaysInputContext.Provider value={{ inputData, handleChange }}>
       {children}
