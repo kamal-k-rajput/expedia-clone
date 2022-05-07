@@ -4,6 +4,7 @@ import { Card } from "./Card";
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import { AddressMap } from "./AddressMap";
+import { StaysInput } from "../StaysInput/StaysInput";
 
 import { PopularFilter } from "./filter/PopularFilter";
 import { YourBudget } from "./filter/YourBudget";
@@ -35,6 +36,7 @@ export const Result = () => {
 
   return (
     <>
+      <StaysInput></StaysInput>
       <div className="main-container">
         <div className="sidebar-container">
           <div className="map-google">
@@ -42,7 +44,11 @@ export const Result = () => {
           </div>
           <div>
             <h4>Search By property name</h4>
-            <input type="text" placeholder="e.g. Great Northern Hotel" />
+            <input
+              type="text"
+              placeholder="e.g. Great Northern Hotel"
+              className="filter-input"
+            />
             <h5>Filter by</h5>
             <div>
               <PopularFilter />

@@ -45,7 +45,7 @@ export const Oneimg = () => {
             </div>
             <div>
               {" "}
-              <input type="number" placeholder="Phone number" class="get-number"/>
+              <input type="number" placeholder="Phone number" className="get-number"/>
             </div>
             <Button>Get the app</Button>
           </div>

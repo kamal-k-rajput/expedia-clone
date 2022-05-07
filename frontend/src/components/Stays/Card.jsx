@@ -71,9 +71,9 @@ export const Card = ({ data }) => {
             <h5>{data.des}</h5>
           </div>
           <div className="details-container">
-            <div>
+            <div className="left-details-container">
               <div>{data.refund}</div>
-              <div>before wed</div>
+              {/* <div>before wed</div> */}
               <div>{data.reserve}</div>
               <div>
                 <span className="rating-details">{data.rating}/5 </span>
@@ -81,9 +81,12 @@ export const Card = ({ data }) => {
                 {data.rating2}
               </div>
             </div>
-            <div>
-              <div>10% off</div>
-              <div>{data.rs}</div>
+            <div className="right-details-container">
+              <div className="tag">{ data.tag}</div>
+              <div className="line-through">
+                {"Rs "}
+                {data.rs}
+              </div>
               <h5>Rs{data.rs1}</h5>
               <div>Rs{data.srs} Total</div>
             </div>
