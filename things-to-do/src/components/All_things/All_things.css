@@ -1,0 +1,15 @@
+.Allthings{
+    font-size: 28px;
+    font-weight: 600;
+   /* display: flex;  */
+  /* border: 2px solid green;   */
+}
+
+.cardcontainer{
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+    text-align: center;
+
+}
+

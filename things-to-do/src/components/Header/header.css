@@ -1,0 +1,30 @@
+.Header{
+    height: 70px;
+    width: 80%;
+    background-color:#343b53;
+    margin-left: 80px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.Inside_Header{
+    display: flex;
+    height: 30px;
+    padding-top: 7px;
+   /* border: 2px solid blue;  */
+    gap: 50px;
+}
+
+.logo{
+    margin-left: 50px;
+    height: 40px;
+   /* border: 2px solid red; */
+    font-size: 30px;
+}
+
+.iidiv{
+    display: flex;
+    gap: 20px;
+    margin-left: 122px;
+}
