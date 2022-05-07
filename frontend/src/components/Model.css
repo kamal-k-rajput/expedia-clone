@@ -1,71 +1,69 @@
-.popupbox1{
-    width:380px;
-    height:300px;
-    border:1px solid red;
-    margin-left: 820px;
-    position:absolute;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 8px;
-    border:transparent;
-    z-index: 1;
-    background-color: white;
+.model{
+
     
-}
-.travellerh3tag{
-    margin-left: 15px;
-    padding-top: 18px;
 }
 
-.firstcontent{
-    display: flex;
-    margin-left: 15px;
-    
-}
-.incdec-div{
-    display: flex;
-    padding-left: 220px;
-    
-    
-    
-}
-.incdec-div>div{
-    margin-left: 10px;
-    
-}
-.incdec-button{
-    font-size: 20px;
-    border-radius: 100%;
-    border:1px solid black;
-    
-}
-.decbutton{
-    border:1px solid silver;
-    border-radius: 100%;
-    font-size:20px;
 
+.popupbox1 {
+  width: 380px;
+  height: 300px;
+  border: 1px solid red;
+  /* position: absolute; */
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  border: transparent;
+  z-index: 1;
+  background-color: white;
+}
+.travellerh3tag {
+  margin-left: 15px;
+  padding-top: 18px;
 }
 
-.ageptag{
-     margin: 0%;
-     padding-left: 15px;
-     font-size: 12px;
+.firstcontent {
+  display: flex;
+  margin-left: 15px;
 }
-.airline-rule{
-    font-size: 13px;
-    color:blue;
-    padding-left: 15px;
-    cursor:pointer;
+.incdec-div {
+  display: flex;
+  padding-left: 220px;
+}
+.incdec-div > div {
+  margin-left: 10px;
+}
+.incdec-button {
+  font-size: 20px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.decbutton {
+  border: 1px solid silver;
+  border-radius: 100%;
+  font-size: 20px;
 }
 
-.donebtn{
-    width:315px;
-    height:40px;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-weight: bolder;
-    color: white;
-    background-color: rgb(54,98,216);
-    border-radius: 8px;
-    border:transparent;
-    cursor:pointer;
+.ageptag {
+  margin: 0%;
+  padding-left: 15px;
+  font-size: 12px;
+}
+.airline-rule {
+  font-size: 13px;
+  color: blue;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.donebtn {
+  width: 315px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(54, 98, 216);
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
 }
