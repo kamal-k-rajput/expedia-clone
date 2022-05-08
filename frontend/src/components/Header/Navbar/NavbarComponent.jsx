@@ -70,7 +70,8 @@ export const NavbarComponent = () => {
               <Nav.Link to="#deets">List Your Property</Nav.Link>
               <Nav.Link to="#deets">Support</Nav.Link>
               <Nav.Link to="#deets">Trips</Nav.Link>
-              <Nav.Link to="#deets">Sign in</Nav.Link>
+              <Nav.Link to={"/login"}>  <Link to={'/login'}>Sign in</Link></Nav.Link>
+            
               <Nav.Link eventKey={2} to="#memes">
                 Dank memes
               </Nav.Link>

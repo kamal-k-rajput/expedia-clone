@@ -1,6 +1,12 @@
 import { createContext, useState } from "react";
 const StaysInputContext = createContext();
 const StaysInputContextProvider = ({ children }) => {
+
+  const [auth,setAuth] = useState(false)
+
+  const handleAuth = (value)=>{
+    setAuth(value)
+  }
   const [inputData, setinputData] = useState({
     location: "",
     checkin: "",
@@ -13,7 +19,7 @@ const StaysInputContextProvider = ({ children }) => {
     console.log(inputData);
   };
   return (
-    <StaysInputContext.Provider value={{ inputData, handleChange }}>
+    <StaysInputContext.Provider value={{ inputData, handleChange ,auth,handleAuth}}>
       {children}
     </StaysInputContext.Provider>
   );

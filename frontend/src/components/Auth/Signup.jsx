@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import FullWidthTextField from "./Input";
 import Checkbox from "@mui/material/Checkbox";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import GoogleIcon from "@mui/icons-material/Google";
 import axios from "axios";
 
@@ -80,37 +80,53 @@ const MainDiv = styled.div`
     cursor: pointer;
   }
 `;
+
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-export const SignIn = () => {
-  const [user, setUser] = useState({ email: "", password: "" });
+export const Signup = () => {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+    firstname: "",
+    surname: "",
+  });
+
+  const [create,setCreate] = useState(false);
   const inputHandler = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
-  // console.log(user);
   return (
     <MainDiv>
       <div>
-        <h1>Sign in</h1>
+        <h1>Create an account</h1>
         <FullWidthTextField
           text={"Email address"}
           handle={inputHandler}
           name={"email"}
         />
         <FullWidthTextField
-          text={"Password"}
+          text={"First name"}
           handle={inputHandler}
+          name={"firstname"}
+        />
+        <FullWidthTextField
+          text={"Surname"}
+          name={"surname"}
+          handle={inputHandler}
+        />
+        <FullWidthTextField
+          text={"Password"}
           name={"password"}
+          handle={inputHandler}
         />
       </div>
-
       <div className="checkbox">
         <Checkbox {...label} defaultChecked />
         <label htmlFor="">This is a public or shared device</label>
       </div>
       <div className="term">
-        By signing in, I agree to the Expedia{" "}
+        By creating an account, I agree to the Expedia
         <a href="/terms" target="_blank" rel="noopener noreferrer">
           Terms and Conditions
         </a>
@@ -128,25 +144,27 @@ export const SignIn = () => {
         <button
           onClick={() => {
             axios
-              .post(`http://localhost:2323/login`, user)
-              .then((data) => alert("you logged in"));
+              .post(`http://188.166.98.109:5000/register`, user)
+              .then((data) => alert("you account created")).then(data=>setCreate(true))
           }}
         >
-          Sign in
+          Continue
         </button>
       </div>
-
-      <Link to={"/"}>Forgot password?</Link>
-
       <p>
-        Don't have an account?{" "}
+        Already have an account?
         <span>
-          <Link to={"/signup"}>Create one</Link>
+          <Link to={"/login"}> Sign in</Link>
         </span>
       </p>
 
       <p>or continue with</p>
-      <GoogleIcon sx={{ color: "blue" }} />
+    
+      <a href="http://188.166.98.109:5000/auth/google"> <GoogleIcon sx={{ color: "blue" }} 
+                  
+                  /></a>
+
+      {create ? <Navigate to={'/login'}  />:""}
     </MainDiv>
   );
 };
