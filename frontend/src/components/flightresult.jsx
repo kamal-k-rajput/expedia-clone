@@ -260,7 +260,9 @@ export const FlightResult = () => {
 
             {flightdata.map((e) => {
               return (
-                <div className="card-flight-result" key={e.id}>
+                <div className="card-flight-result" key={e.id} onClick={() => {
+                  <Link to="/payment"> </Link>
+                }}>
                   <div className="res-container-flight">
                     <div className="time-container">
                       <span>{e.stime}</span>-<span>{e.etime}</span>
