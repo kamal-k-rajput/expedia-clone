@@ -11,10 +11,10 @@
   font-family: arial;
 }
 #bd {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 #p2 {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
   padding: auto;
 }
 /* #p3{
@@ -40,7 +40,7 @@
   background-color: rgb(234, 228, 228);
 }
 #pd {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 #p1 {
@@ -115,4 +115,7 @@
 #less {
   display: flex;
   gap: 200px;
+}
+#but:active{
+    color: red;
 }

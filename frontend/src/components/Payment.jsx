@@ -825,9 +825,12 @@ export const Payment = () => {
               travel provider (airline/hotel/rail, etc.) processes your payment.
             </p>
 
-            <button id="but" onClick={goto}>
-              Compleate booking &lt;{" "}
+            <Link to={'/'}>
+            <button id="but" >
+              Complete booking
             </button>
+            </Link>
+          
 
             <p>
               We use secure transmission and encrypted storage to protect your
@@ -861,14 +864,15 @@ export const Payment = () => {
           <hr />
           <div id="to">
             <p>Starting Price</p>
-            <p>total</p>
+            <p>{13157}</p>
           </div>
           <div id="less">
             <p>Total Saving</p>
             <p id="la">200</p>
           </div>
           <hr />
-          <div id="gt"></div>
+          <div id="gt">Your Total Amount:{13357}</div>
+        
         </div>
       </div>
     </>
