@@ -1,0 +1,74 @@
+.hm-img {
+  width: 80%;
+  margin: 30px;
+  height: 450px;
+  border-radius: 10px;
+}
+.hm-ft-img {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.hm-ft-img > div:nth-child(1) {
+  flex: 2;
+}
+.hm-ft-img > div:nth-child(2) {
+  flex: 3;
+}
+.hm-ft-img > div:nth-child(3) {
+  flex: 1;
+}
+.hm-ft-img > div:nth-child(1) > img {
+  width: 100%;
+}
+.hm-contact-card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  height: 40px;
+}
+.hm-contact-card > div,
+button {
+  height: 100%;
+}
+.hm-contact-card > div > select,
+.get-number {
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.contact {
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  .hm-ft-img{
+
+    flex-direction: column;
+  }
+  .hm-contact-card {
+    flex-direction: column;
+    height: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .hm-ft-img {
+    flex-direction: column;
+  }
+
+  .hm-contact-card {
+    flex-direction: column;
+    height: 150px;
+  }
+  .hm-contact-card > div,
+  button {
+    height: 50px;
+  }
+  .hm-contact-card > div > select,
+  .get-number {
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
