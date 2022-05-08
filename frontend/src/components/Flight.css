@@ -1,0 +1,115 @@
+.maindiv {
+  display: flex;
+  margin-left: 150px;
+}
+.firstdiv {
+  display: flex;
+}
+.seconddiv {
+  display: flex;
+  margin-left: 380px;
+}
+.firstdiv > div {
+  margin-left: 40px;
+  cursor: pointer;
+  border: 1px solid red;
+  height: 30px;
+  width: 80px;
+  padding-left: 20px;
+  padding-top: 5px;
+  border-radius: 5px;
+  border: transparent;
+}
+.firstdiv > div:hover {
+  background-color: rgb(231, 237, 253);
+}
+.seconddiv > div {
+  display: flex;
+  margin-left: 40px;
+  color: blue;
+  cursor: pointer;
+}
+input {
+  /* margin-top: 30px; */
+  height: 40px;
+  font-size: 18px;
+}
+.migrate {
+  /* margin-top: 30px; */
+  width: 290px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 90%;
+}
+.date {
+  margin-top: 30px;
+  width: 180px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.inputdiv {
+  margin-left: 160px;
+  display: flex;
+  justify-content: space-around
+}
+
+.navflightbtn {
+  color: white;
+  background-color: rgb(54, 98, 216);
+  height: 40px;
+  width: 150px;
+  font-weight: bolder;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 42%;
+  cursor: pointer;
+}
+.migrate-container {
+ display: flex;
+ flex-direction: row;
+ border:1px solid rgb(0, 0, 0);
+ border-radius:5px;
+ height: 40px;
+}
+
+.migrate-container:active {
+  border: none;
+  outline: none;
+}
+.migrate:focus {
+  border: none;
+  outline: none;
+}
+label {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.swapbtn {
+  border-radius: 50%;
+  font-size: larger;
+  cursor: pointer;
+}
+.input-date-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 40px;
+  border-radius: 5px;
+}
+.input-date-time > span {
+ font-size: 13px;
+}
+.input-date-time > input {
+  font-size: 13px;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
