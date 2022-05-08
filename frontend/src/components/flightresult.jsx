@@ -13,6 +13,7 @@ import { WiSunset } from "react-icons/wi";
 import { WiDayHaze } from "react-icons/wi";
 import { NavbarComponent } from "./Header/Navbar/NavbarComponent";
 import { Header } from "./Header/Header";
+import{Link} from "react-router-dom";
 export const FlightResult = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
@@ -34,7 +35,6 @@ export const FlightResult = () => {
 
   return (
     <div className="flightresultpage">
-
       <Header />
       <div className="navbar">
         <div>
@@ -260,9 +260,13 @@ export const FlightResult = () => {
 
             {flightdata.map((e) => {
               return (
-                <div className="card-flight-result" key={e.id} onClick={() => {
-                  <Link to="/payment"> </Link>
-                }}>
+                <div
+                  className="card-flight-result"
+                  key={e.id}
+                  onClick={() => {
+                    <Link to="/payment"> </Link>;
+                  }}
+                >
                   <div className="res-container-flight">
                     <div className="time-container">
                       <span>{e.stime}</span>-<span>{e.etime}</span>
