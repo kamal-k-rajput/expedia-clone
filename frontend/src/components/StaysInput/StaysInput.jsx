@@ -77,14 +77,14 @@ export const StaysInput = () => {
       <div className="input-additional">
         <label>
           <input type="checkbox" />
-          {"Add a flight "}
+          <span> {"Add a flight "}</span>
         </label>
         <label>
           <input type="checkbox" />
-          {"Add a Car "}
+          <span> {"Add a Car "}</span>
         </label>
       </div>
-      <div className="button">
+      <div className="stay-input-button">
         <Button variant="primary" size="lg">
           <Link
             to="/searchResult"

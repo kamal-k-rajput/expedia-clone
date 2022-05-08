@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { ImLocation } from "react-icons/im";
 import "./Flight.css";
 import { Model } from "./Model";
@@ -6,7 +6,7 @@ import { Dropdown } from "./dropdown";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineSwapHoriz } from "react-icons/md";
 import { Link } from "react-router-dom";
-
+import { Oneimg } from "./Home/Oneimg";
 export const Flight = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
@@ -66,6 +66,8 @@ export const Flight = () => {
       <Link to="/flightresult">
         <button className="navflightbtn">Search</button>
       </Link>
+
+      <Oneimg />
     </div>
   );
 };

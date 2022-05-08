@@ -2,7 +2,13 @@
   width: 80%;
   margin: 30px;
   height: 450px;
+  margin: 10px auto;
   border-radius: 10px;
+}
+.one-img-conatainer {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
 }
 .hm-ft-img {
   display: flex;
@@ -43,8 +49,7 @@ button {
   padding: 10px;
 }
 @media (max-width: 480px) {
-  .hm-ft-img{
-
+  .hm-ft-img {
     flex-direction: column;
   }
   .hm-contact-card {

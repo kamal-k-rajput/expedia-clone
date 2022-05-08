@@ -16,7 +16,6 @@ export const FlightResult = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
   const [flightdata, setFlightdata] = useState([]);
-
   const openpopup = () => {
     setOpenmodel(true);
   };
@@ -258,14 +257,14 @@ export const FlightResult = () => {
 
             {flightdata.map((e) => {
               return (
-                <div className="card" key={e.id}>
+                <div className="card-flight-result" key={e.id}>
                   <div className="res-container-flight">
                     <div className="time-container">
                       <span>{e.stime}</span>-<span>{e.etime}</span>
                     </div>
                     <div>{e.dest}</div>
                     <div>
-                      <img src={e.logo} className="flight-logo" />
+                      <img src={e.logo} className="flight-logo" alt=""/>
                       {e.pname}
                     </div>
                     <div>{e.safe}</div>

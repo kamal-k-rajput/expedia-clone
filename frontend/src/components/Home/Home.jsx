@@ -10,8 +10,9 @@ export const Home = () => {
       <StaysInput></StaysInput>
       <Oneimg></Oneimg>
       <div>
-        <p>Explore a world of travel with Expedia</p>
-        {/* <a href=""></a> */}
+        <p style={{ textAlign: "center" }}>
+          Explore a world of travel with Expedia
+        </p>
       </div>
     </div>
   );

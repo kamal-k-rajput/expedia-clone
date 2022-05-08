@@ -3,7 +3,7 @@ import "./Img.css";
 import { Button } from "react-bootstrap";
 export const Oneimg = () => {
   return (
-    <div>
+    <div className="one-img-conatainer">
       <img
         className="hm-img"
         alt="homepage-logo"

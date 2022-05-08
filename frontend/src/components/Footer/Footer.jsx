@@ -48,7 +48,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div >
+      <div style={{ textAlign: "center" }}>
         <img
           alt=""
           src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"

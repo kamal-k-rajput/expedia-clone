@@ -11,8 +11,12 @@ export const Header = () => {
         <div>
           <Link to="/flight">Flight</Link>
         </div>
-        <div>Cars</div>
-        <div>Packages</div>
+        <div>
+          <Link to="/cars">Cars</Link>
+        </div>
+        <div>
+          <Link to="/cars">Packages</Link>
+        </div>
         <Link to="/thingstodo">Things to do</Link>
       </div>
     </>
