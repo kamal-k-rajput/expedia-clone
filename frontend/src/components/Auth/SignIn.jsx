@@ -116,17 +116,17 @@ export const SignIn = () => {
       </div>
       <div className="term">
         By signing in, I agree to the Expedia{" "}
-        <a href="/terms" target="_blank" rel="noopener noreferrer">
+        <Link to="/terms" >
           Terms and Conditions
-        </a>
+        </Link>
         ,{" "}
-        <a href="/privacy" target="_blank" rel="noopener noreferrer">
+        <Link to="/privacy" >
           Privacy Statement
-        </a>{" "}
+        </Link>{" "}
         and{" "}
-        <a href="/rewards/terms" target="_blank" rel="noopener noreferrer">
+        <Link to="/rewards/terms" >
           Expedia Rewards Terms and Conditions
-        </a>
+        </Link>
         .
       </div>
       <div>
@@ -152,9 +152,9 @@ export const SignIn = () => {
 
       <p>or continue with</p>
      
-        <a href="http://188.166.98.109:5000/auth/google"> <GoogleIcon sx={{ color: "blue" }} 
+        <Link to="http://188.166.98.109:5000/auth/google"> <GoogleIcon sx={{ color: "blue" }} 
                   
-                  /></a>
+                  /></Link>
       {auth ? <Navigate to={'/'} />:""}
     </MainDiv>
   );
