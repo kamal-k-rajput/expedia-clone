@@ -7,6 +7,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineSwapHoriz } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Oneimg } from "./Home/Oneimg";
+import { Header } from "./Header/Header";
+
 export const Flight = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
@@ -17,6 +19,7 @@ export const Flight = () => {
 
   return (
     <div className="flightnav" id="flight">
+      <Header />
       <div className="maindiv">
         <div className="firstdiv">
           <div>Return</div>

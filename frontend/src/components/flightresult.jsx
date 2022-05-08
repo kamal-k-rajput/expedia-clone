@@ -11,7 +11,8 @@ import { WiDaySunny } from "react-icons/wi";
 import { WiHorizonAlt } from "react-icons/wi";
 import { WiSunset } from "react-icons/wi";
 import { WiDayHaze } from "react-icons/wi";
-
+import { NavbarComponent } from "./Header/Navbar/NavbarComponent";
+import { Header } from "./Header/Header";
 export const FlightResult = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
@@ -33,6 +34,8 @@ export const FlightResult = () => {
 
   return (
     <div className="flightresultpage">
+
+      <Header />
       <div className="navbar">
         <div>
           Return <IoIosArrowDown />
@@ -264,7 +267,7 @@ export const FlightResult = () => {
                     </div>
                     <div>{e.dest}</div>
                     <div>
-                      <img src={e.logo} className="flight-logo" alt=""/>
+                      <img src={e.logo} className="flight-logo" alt="" />
                       {e.pname}
                     </div>
                     <div>{e.safe}</div>
