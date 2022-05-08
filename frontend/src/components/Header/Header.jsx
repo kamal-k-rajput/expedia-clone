@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
         <div>Cars</div>
         <div>Packages</div>
-        <div>Things to do</div>
+        <Link to="/thingstodo">Things to do</Link>
       </div>
     </>
   );

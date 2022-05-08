@@ -12,7 +12,7 @@ import { WiHorizonAlt } from "react-icons/wi";
 import { WiSunset } from "react-icons/wi";
 import { WiDayHaze } from "react-icons/wi";
 
-export const Flightresult = () => {
+export const FlightResult = () => {
   const [openmodel, setOpenmodel] = useState(false);
   const [selected, setSelected] = useState("Economy");
   const [flightdata, setFlightdata] = useState([]);

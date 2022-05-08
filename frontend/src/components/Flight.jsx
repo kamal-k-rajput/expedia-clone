@@ -16,7 +16,7 @@ export const Flight = () => {
   };
 
   return (
-    <div className="flightnav">
+    <div className="flightnav" id="flight">
       <div className="maindiv">
         <div className="firstdiv">
           <div>Return</div>

@@ -1,0 +1,71 @@
+.cityComponent {
+  display: flex;
+  margin-top: 30px;
+  gap: 25px;
+  /*  border: 2px solid red;  */
+}
+
+.leftdiv {
+  height: 600px;
+  width: 20%;
+  /* border: 2px solid blue;  */
+  margin-left: 65px;
+}
+
+.rightdiv {
+  /* height:900px; */
+  width: 70%;
+  /*  border: 2px solid grey; */
+}
+
+.imgdiv {
+  height: 600px;
+  width: 15%;
+  /*  border: 2px solid grey;    */
+}
+
+.search_para {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+}
+.input:hover {
+  border: 2px solid blue;
+}
+
+.input_icon {
+  display: flex;
+}
+.input_icon:hover {
+  color: blue;
+}
+
+.saftey_practices {
+  font-weight: 550;
+}
+
+.cleaning_safety {
+  display: flex;
+  gap: 10px;
+  /* border: 2px solid red; */
+  height: 70px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.iipara {
+  margin-top: 5px;
+}
+
+.ist_radio {
+  display: flex;
+  gap: 10px;
+  /*  border: 2px solid red; */
+}
+
+/*mid div */
